@@ -1,0 +1,155 @@
+class ResumeBuilder {
+    private String name;
+    private String email;
+    private String phone;
+    private String LinkedIn;
+    private String Github;
+    private String summary;
+    private String education;
+
+    private String certificates;
+    private String Languages;
+    private String CodingProfiles;
+
+    private String PersonalProjects;
+
+    private String PersonalSkills;
+
+    private String Achievements;
+    private String skills;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+    public void setLinkedIn(String LinkedIn) {
+        this.LinkedIn =LinkedIn;
+    }
+    public void setGithub(String Github) {
+        this.Github =Github;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
+
+    public void setEducation(String education) {
+        this.education = education;
+    }
+    public void setCertificates(String certificates) {
+        this.certificates = certificates;
+    }
+    public void setLanguages(String Languages) {
+        this.Languages = Languages;
+    }
+    public void setCodingProfiles(String CodingProfiles) {
+        this.CodingProfiles = CodingProfiles;
+    }
+    public void setPersonalProjects(String PersonalProjects) {
+        this.PersonalProjects = PersonalProjects;
+    }
+    public void setPersonalSkills(String PersonalSkills) {
+        this.PersonalSkills = PersonalSkills;
+    }
+    public void setAchievements(String Achievements) {
+        this.Achievements = Achievements;
+    }
+
+
+    public void setSkills(String skills) {
+        this.skills= skills;
+    }
+
+    public void printResume() {
+        System.out.println("Name:  " + name);
+        System.out.println("Email: " + email);
+        System.out.println("Phone: " + phone);
+        System.out.println("LinkedIn: " +LinkedIn);
+        System.out.println("Github: " +Github);
+        System.out.println("Summary: " + summary);
+        System.out.println("Education: " + education);
+        System.out.println("certificates: " + certificates);
+        System.out.println("Languages: " +  Languages);
+        System.out.println("CodingProfiles " +  CodingProfiles);
+        System.out.println("PersonalProjects: " +  PersonalProjects);
+        System.out.println("PersonalSkills: " +  PersonalSkills);
+        System.out.println("Achievements: " +  Achievements);
+        System.out.println("Skills: " + skills);
+    }
+}
+public class ResumeBuilderApp {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ResumeBuilder resume = new ResumeBuilder();
+
+        System.out.println("Resume Builder");
+        System.out.println("---------------------------------------------------------------------------------------------------------------------------");
+
+        System.out.print("|Enter your name: ");
+        String name = scanner.nextLine();
+        resume.setName(name);
+
+        System.out.print("|Enter your email: ");
+        String email = scanner.nextLine();
+        resume.setEmail(email);
+
+        System.out.print("|Enter your phone number: ");
+        String phone = scanner.nextLine();
+        resume.setPhone(phone);
+
+        System.out.print("|Enter your LinkedIn profile Name: ");
+        String LinkedIn = scanner.nextLine();
+        resume.setLinkedIn(LinkedIn);
+
+        System.out.print("|Enter your Github profile : ");
+        String Github = scanner.nextLine();
+        resume.setGithub(Github);
+
+        System.out.print("|Enter a summary of your skills and qualifications: ");
+        String summary = scanner.nextLine();
+        resume.setSummary(summary);
+
+        System.out.print("|Enter your education details: ");
+        String education = scanner.nextLine();
+        resume.setEducation(education);
+
+        System.out.print("|Enter your certificates: ");
+        String certificates = scanner.nextLine();
+        resume.setCertificates(certificates);
+
+        System.out.print("|Enter your Languages: ");
+        String Languages = scanner.nextLine();
+        resume.setLanguages(Languages);
+
+        System.out.print("|Enter your  CodingProfiles: ");
+        String  CodingProfiles = scanner.nextLine();
+        resume.setCodingProfiles(CodingProfiles);
+
+        System.out.print("|Enter your PersonalProjects: ");
+        String PersonalProjects = scanner.nextLine();
+        resume.setPersonalProjects(PersonalProjects);
+
+        System.out.print("|Enter your PersonalSkills: ");
+        String PersonalSkills= scanner.nextLine();
+        resume.setPersonalSkills(PersonalSkills);
+
+        System.out.print("|Enter your Achievements: ");
+        String Achievements = scanner.nextLine();
+        resume.setAchievements(Achievements);
+
+        System.out.print("|Enter your skills: ");
+        String skills = scanner.nextLine();
+        resume.setSkills(skills);
+
+        System.out.println("|\n-------- Resume --------");
+        resume.printResume();
+        System.out.println("---------------------------------------------------------------------------------------------------------------------------");
+    }
+}
